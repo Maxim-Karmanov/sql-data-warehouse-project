@@ -112,7 +112,7 @@ BEGIN
 
         SET @start_time = GETDATE();
         PRINT '>> Truncating Table: silver.crm_sales_details';
-        TRUNCATE TABLE silver.crm_prd_info;
+        TRUNCATE TABLE silver.crm_sales_details;
         PRINT '>> Inserting Data Into: silver.crm_sales_details';
 
         INSERT INTO silver.crm_sales_details (
