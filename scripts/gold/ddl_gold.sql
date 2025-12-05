@@ -72,10 +72,14 @@ CREATE VIEW gold.dim_products AS
   LEFT JOIN [silver].[erp_px_cat_g1v2] pc
   ON pn.cat_id = pc.id
   where pn.prd_end_dt is null;
-  
+
+GO
 -- ===================================================================================
 -- Cretae Dimension: gold.fact_sales
 -- ===================================================================================
+IF OBJECT_ID('gold.fact_sales', 'V') IS NOT NULL
+	DROP VIEW gold.fact_sales;
+GO
 
 CREATE VIEW gold.fact_sales AS
   SELECT
