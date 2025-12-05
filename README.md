@@ -77,12 +77,21 @@ For more details, refer to [docs/requirements.md](docs/requirements.md).
 data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│
+│   ├── source_crm
+│       ├── cust_info.csv
+│       ├── prd_info.csv
+│       ├── sales_details.csv
+│   ├── source_erp
+│       ├── CUST_AZ12.csv
+│       ├── LOC_A101.csv
+│       ├── PX_CAT_G1V2.csv
 ├── docs/                               # Project documentation and architecture details
-│   ├── data_architecture.drawio        # Draw.io file shows the project's architecture
+│   ├── merged.drawio                   # Drawio file contains all the graphs that are present in the catalog.
+│   ├── data_architecture.png           # PNG file shows the project's architecture
 │   ├── data_catalog.md                 # Catalog of datasets, including field descriptions and metadata
-│   ├── data_flow.drawio                # Draw.io file for the data flow diagram
-│   ├── data_models.drawio              # Draw.io file for data models (star schema)
+│   ├── data_flow.png                   # PNG file for the data flow diagram
+│   ├── data_integration.png            # PNG file for data integration diagram
+│   ├── data_model.png                  # PNG file for data models (star schema)
 │   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
