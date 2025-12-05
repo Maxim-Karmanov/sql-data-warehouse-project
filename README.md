@@ -92,12 +92,13 @@ data-warehouse-project/
 │   ├── data_flow.png                   # PNG file for the data flow diagram
 │   ├── data_integration.png            # PNG file for data integration diagram
 │   ├── data_model.png                  # PNG file for data models (star schema)
-│   ├── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
+│   └── naming-conventions.md           # Consistent naming guidelines for tables, columns, and files
 │
 ├── scripts/                            # SQL scripts for ETL and transformations
+│   ├── init_database.sql               # SQL scripts for initialization database
 │   ├── bronze/                         # Scripts for extracting and loading raw data
 │   ├── silver/                         # Scripts for cleaning and transforming data
-│   ├── gold/                           # Scripts for creating analytical models
+│   └── gold/                           # Scripts for creating analytical models
 │
 ├── tests/                              # Test scripts and quality files
 │
