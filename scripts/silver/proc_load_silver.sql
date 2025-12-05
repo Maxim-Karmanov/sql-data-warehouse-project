@@ -219,7 +219,7 @@ BEGIN
 	        id,
 	        cat,
 	        subcat,
-	        maintence
+	        maintenance
         )
         SELECT
 	        id,
