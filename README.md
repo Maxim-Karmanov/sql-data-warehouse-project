@@ -77,14 +77,14 @@ For more details, refer to [docs/requirements.md](docs/requirements.md).
 data-warehouse-project/
 │
 ├── datasets/                           # Raw datasets used for the project (ERP and CRM data)
-│   ├── source_crm
+│   └── source_crm
 │       ├── cust_info.csv
 │       ├── prd_info.csv
-│       ├── sales_details.csv
-│   ├── source_erp
+│       └── sales_details.csv
+│   └── source_erp
 │       ├── CUST_AZ12.csv
 │       ├── LOC_A101.csv
-│       ├── PX_CAT_G1V2.csv
+│       └── PX_CAT_G1V2.csv
 ├── docs/                               # Project documentation and architecture details
 │   ├── merged.drawio                   # Drawio file contains all the graphs that are present in the catalog.
 │   ├── data_architecture.png           # PNG file shows the project's architecture
